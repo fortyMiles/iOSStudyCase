@@ -51,6 +51,17 @@ class CaculatorBrain{
         //This brace is a function that takes one argument and returns one argument.
     }
     
+    
+    var program: AnyObject{
+        get{
+            return opStack.map { $0.description}
+        }
+        
+        set{
+            
+        }
+    }
+    
     private func evaluate(ops: [Op]) -> (result: Double?, remainOps: [Op]){
         if !ops.isEmpty {
             var remainingOps = ops
