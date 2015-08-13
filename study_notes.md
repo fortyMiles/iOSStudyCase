@@ -32,6 +32,7 @@ When we combine the CGPoint, and CGFloat => CGRect
 
 	* Origin is upper left.
 	* Units are points, not pixels
+
 >> iOS will handle this, how many pixel included in one points. 
 >> If we want to see how many pixels in one points, we could use _contentScaleFactor_
 
